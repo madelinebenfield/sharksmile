@@ -64,7 +64,7 @@ body{
 #coinmobile{
     visibility: hidden;
 }
-#couchmoile{
+#chandeliermobile{
     visibility: hidden;
 }
 #mobiletext1{
@@ -96,6 +96,9 @@ body{
     #car{
         visibility: hidden;
     }
+    #text{
+        visibility: hidden;
+    }
     #couchmobile{
         visibility: visible;
         position: fixed;
@@ -123,29 +126,37 @@ body{
     }
     #mobiletext1{
         visibility: visible;
+        position: fixed;
         font-family: 'Chivo', sans-serif;
         font-size: 30pt;
         left: 25%;
         right: 25%;
+        top: 12.5%;
     }
     #mobiletext2{
         visibility: visible;
+        position: fixed;
         font-family: 'Chivo', sans-serif;
         font-size: 30pt;
         left: 25%;
         right: 25%;
+        top: 37.5%;
     }
     #mobiletext3{
         visibility: visible;
+        position: fixed;
         font-family: 'Chivo', sans-serif;
         font-size: 30pt;
         left: 25%;
         right: 25%;
+        top: 62.5%;
     }
     #mobiletext4{
         visibility: visible;
+        position: fixed;
         font-family: 'Chivo', sans-serif;
         font-size: 30pt;
+        top: 87.5%;
         left: 25%;
         right: 25%;
     }
