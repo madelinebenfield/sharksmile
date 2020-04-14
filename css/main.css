@@ -30,6 +30,13 @@ body{
     height: 200px;
     width: 200px;
 }
+#couch{
+    position: fixed;
+    top: 10px;
+    right: 10%;
+    height: 100px;
+    width: 100px;
+}
 #chandelier{
     position: fixed;
     top: 520px;
@@ -116,6 +123,9 @@ body{
         visibility: hidden;
     }
     #text{
+        visibility: hidden;
+    }
+    #couch{
         visibility: hidden;
     }
     #container{
