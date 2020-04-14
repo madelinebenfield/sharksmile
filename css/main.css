@@ -105,18 +105,20 @@ body{
         top: 25%;
         height: 150px;
         width: 150px;
+        left: 30%;
     }
     #coinmobile{
         visibility: visible;
         position: fixed;
         top: 50%;
+        left: 50%;
         height: 150px;
         width: 150px;
     }
     #chandeliermobile{
         visibility: visible;
         position: fixed;
-        bottom: 25%;
+        bottom: 18%;
         height: 150px;
         width: 150px;
     }
@@ -131,7 +133,7 @@ body{
         font-size: 30pt;
         left: 25%;
         right: 25%;
-        top: 12.5%;
+        top: 10%;
     }
     #mobiletext2{
         visibility: visible;
