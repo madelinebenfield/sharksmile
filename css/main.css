@@ -149,7 +149,7 @@ body{
     #chandeliermobile{
         visibility: visible;
         position: fixed;
-        bottom: 16%;
+        top: 72%;
         height: 200px;
         width: 200px;
         left: 39%;
