@@ -85,6 +85,11 @@ body{
     top: 5%;
     position: absolute;
 }
+#oval{
+    visibility: hidden;
+    top: 5%;
+    position: absolute;
+}
 #mobiletext1{
     visibility: hidden;
     top: 5%;
@@ -110,6 +115,9 @@ body{
  and (max-device-width: 667px)
  and (-webkit-min-device-pixel-ratio: 2)
  and (orientation: portrait) {
+    body{
+        background: black;
+    }
     #coin{
         visibility: hidden;
     }
@@ -124,6 +132,8 @@ body{
     }
     #text{
         visibility: hidden;
+        position: absolute;
+        left: 1px;
     }
     #couch{
         visibility: hidden;
@@ -132,7 +142,7 @@ body{
         width: 100%;
         height: 100%;
     }
-    #couchmobile{
+    /* #couchmobile{
         visibility: visible;
         position: fixed;
         top: 27%;
@@ -158,50 +168,78 @@ body{
         visibility: visible;
         position: fixed;
         top: 6%;
-        left: 33%;
-    }
+        left: 33%; } */
+    
     #container{
         width: 100%;
-        height: 100%;
+        height: 100%; 
     }
     #mobiletext1{
         visibility: visible;
         position: fixed;
-        text-align: justify;
+        color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 30pt;
-        left: 25%;
-        right: 25%;
-        top: 17.5%;
+        font-size: 70pt;
+        text-align: justify;
+        padding: 50px;
+        top: 0%;
+        animation: text-blur-out;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 6s;
+    }
+    .text-blur-out {
+        -webkit-animation: text-blur-out 6s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
+        animation: text-blur-out 6s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
+    }
+    @keyframes text-blur-out {
+        0% {
+            filter: blur(0.01);
+        }
+        100% {
+            filter: blur(12px) opacity(0%);
+        }
     }
     #mobiletext2{
         visibility: visible;
         position: fixed;
+        color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 30pt;
+        font-size: 70pt;
         text-align: justify;
-        left: 25%;
-        right: 25%;
-        top: 40%;
+        padding: 50px;
+        top: 25%;
+        animation: text-blur-out;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 10s;   
     }
     #mobiletext3{
         visibility: visible;
         position: fixed;
+        color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 30pt;
-        left: 25%;
-        right: 25%;
-        top: 62.5%;
+        font-size: 70pt;
+        padding: 50px;
+        top: 50%;
         text-align: justify;
+        animation: text-blur-out;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 14s;
     }
     #mobiletext4{
         visibility: visible;
         position: fixed;
+        color: white;
         text-align: justify;
         font-family: 'Chivo', sans-serif;
-        font-size: 30pt;
-        top: 87.5%;
-        left: 25%;
-        right: 25%;
+        font-size: 70pt;
+        top: 75%;
+        padding: 50px;
+        animation: text-blur-out;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 20s;
     }
  }
