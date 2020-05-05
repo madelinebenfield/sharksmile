@@ -299,8 +299,9 @@ iframe{
         padding: 0;
     }
     body{
-        background: rgba(198,108,65,1);
         padding-bottom: 100px;
+        background: rgb(134,66,53);
+        background: linear-gradient(rgba(134,66,53,1) 0%, rgba(198,108,65,1) 50%, rgba(226,225,83,1) 100%);
     }
     #coin{
         visibility: hidden;
@@ -320,7 +321,7 @@ iframe{
     #car{
         visibility: visible;
         position: absolute;
-        top: 40px;
+        top: 80px;
         left: 43%;
     }
     #container{
@@ -342,7 +343,6 @@ iframe{
         z-index: 30;
         margin-left: 27%;
         margin-top: 15%;
-        margin-bottom: 30px;
     }
     iframe{
         visibility: hidden;
