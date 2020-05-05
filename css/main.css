@@ -1,12 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     cursor: help;
-    background-color: white;
     color: black;
 }
 #car{
     position: fixed;
     top: 200px;
     right: 30%;
+    height: 100px;
+    width: relative;
+}
+iframe{
+    visibility: hidden;
+    position: absolute;
+    left: 5px;
 }
 #car:hover + #container{
     background: rgb(134,66,53);
@@ -23,17 +33,20 @@ body{
     width: 100%;
     text-align: justify;
 }
+#text2{
+    visibility: hidden;
+}
 #coin{
     position: fixed;
-    top: 500px;
-    left: 10%;
+    top: 530px;
+    left: 4%;
     height: 200px;
     width: 200px;
 }
 #couch{
     position: fixed;
     top: 10px;
-    right: 10%;
+    right: 15%;
     height: 100px;
     width: 100px;
 }
@@ -53,15 +66,15 @@ body{
 }
 #sharksmile{
     position: fixed;
-    top: 310px;
-    left: 23%;
+    top: 410px;
+    left: 19%;
     height: 100px;
     width: 100px;
 }
 #bigthief{
     position: fixed;
-    top: 650px;
-    right: 15%;
+    top: 490px;
+    right: 20%;
     height: 70px;
     width: 70px;
 }
@@ -110,8 +123,36 @@ body{
     top: 5%;
     position: absolute;
 }
+#mobiletext5{
+    visibility: hidden;
+    top: 5px;
+    left: 5px;
+}
+#coin2{
+    visibility: hidden;
+    left: 5px;
+    top: 5px;
+}
+#couch2{
+    visibility: hidden;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+#chandelier2{
+    visibility: hidden;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
+#gun2{
+    visibility: hidden;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
 @media only screen
- and (min-device-width: 375px)
+ and (min-device-width: 0px)
  and (max-device-width: 667px)
  and (-webkit-min-device-pixel-ratio: 2)
  and (orientation: portrait) {
@@ -122,7 +163,12 @@ body{
         visibility: hidden;
     }
     #chandelier{
+        visibility: hidden; 
+    }
+    #text2{
         visibility: hidden;
+        font-size: 0px;
+        left: 5px;
     }
     #gun{
         visibility: hidden;
@@ -135,62 +181,57 @@ body{
         position: absolute;
         left: 1px;
     }
+    iframe{
+        visibility: hidden;
+        position: absolute;
+        left: 5px;
+    }
     #couch{
         visibility: hidden;
     }
-    #container{
-        width: 100%;
-        height: 100%;
+    #coin2{
+        visibility: hidden;
+        left: 5px;
+        top: 5px;
+        height: 0px;
+        position: absolute;
     }
-    /* #couchmobile{
-        visibility: visible;
-        position: fixed;
-        top: 27%;
-        height: 200px;
-        left: 30%;
+    #couch2{
+        visibility: hidden;
+        left: 5px;
+        top: 5px;
+        height: 0px;
+        position: absolute;
     }
-    #coinmobile{
-        visibility: visible;
-        position: fixed;
-        top: 48%;
-        left: 40%;
-        height: 200px;
+    #chandelier2{
+        visibility: hidden;
+        left: 5px;
+        top: 5px;
+        height: 0px;
+        position: absolute;
     }
-    #chandeliermobile{
-        visibility: visible;
-        position: fixed;
-        top: 72%;
-        height: 200px;
-        width: 200px;
-        left: 39%;
-    }
-    #sharksmilemobile{
-        visibility: visible;
-        position: fixed;
-        top: 6%;
-        left: 33%; } */
-    
-    #container{
-        width: 100%;
-        height: 100%; 
+    #gun2{
+        visibility: hidden;
+        left: 5px;
+        top: 5px;
+        height: 0px;
+        position: absolute;
     }
     #mobiletext1{
         visibility: visible;
         position: fixed;
         color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 70pt;
+        font-size: 35pt;
         text-align: justify;
-        padding: 50px;
-        top: 0%;
+        padding: 40px;
+        width: 80%;
+        top: 2%;
         animation: text-blur-out;
-        animation-duration: inherit;
         animation-timing-function: linear;
-        animation-duration: 6s;
-    }
-    .text-blur-out {
-        -webkit-animation: text-blur-out 6s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
-        animation: text-blur-out 6s cubic-bezier(0.550, 0.085, 0.680, 0.530) 4s both;
+        animation-iteration-count: 1;
+        animation-duration: 18s;
+        animation-fill-mode: forwards;
     }
     @keyframes text-blur-out {
         0% {
@@ -205,28 +246,32 @@ body{
         position: fixed;
         color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 70pt;
+        font-size: 35pt;
         text-align: justify;
-        padding: 50px;
-        top: 25%;
+        padding: 40px;
+        top: 22%;
+        width: 80%;
         animation: text-blur-out;
-        animation-duration: inherit;
         animation-timing-function: linear;
-        animation-duration: 10s;   
+        animation-iteration-count: 1;
+        animation-duration: 24s;
+        animation-fill-mode: forwards;
     }
     #mobiletext3{
         visibility: visible;
         position: fixed;
         color: white;
         font-family: 'Chivo', sans-serif;
-        font-size: 70pt;
-        padding: 50px;
-        top: 50%;
+        font-size: 35pt;
+        padding: 40px;
+        top: 48%;
         text-align: justify;
+        width: 80%;
         animation: text-blur-out;
         animation-duration: inherit;
         animation-timing-function: linear;
-        animation-duration: 14s;
+        animation-duration: 41s;
+        animation-fill-mode: forwards;
     }
     #mobiletext4{
         visibility: visible;
@@ -234,12 +279,213 @@ body{
         color: white;
         text-align: justify;
         font-family: 'Chivo', sans-serif;
-        font-size: 70pt;
-        top: 75%;
-        padding: 50px;
+        font-size: 35pt;
+        top: 73%;
+        width: 80%;
+        padding: 40px;
         animation: text-blur-out;
         animation-duration: inherit;
         animation-timing-function: linear;
-        animation-duration: 20s;
+        animation-duration: 58s;
+        animation-fill-mode: forwards;
+    }
+ }
+ @media only screen
+ and (min-device-width: 2000px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (orientation: landscape) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(-45deg, rgba(134,66,53,1), rgba(198,108,65,1), rgba(226,225,83,1));
+        background-size: 400% 400%;
+        animation: gradient 45s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    #coin{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #chandelier{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #gun{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #car{
+        visibility: visible;
+        position: absolute;
+        top: 40px;
+        left: 43%;
+    }
+    #container{
+        left: 10%;
+        right: 10%;
+    }
+    #text{
+        visibility: hidden;
+        font-size: 0px;
+    }
+    #text2{
+        font-family: 'Chivo', sans-serif;
+        font-size: 30pt;
+        text-align: justify;
+        width: 100%;
+        color: black;
+        visibility: visible;
+        line-height: .87;
+        z-index: 30;
+        margin-left: 27%;
+        margin-top: 15%;
+    }
+    iframe{
+        visibility: hidden;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    #couch{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #mobiletext1{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #mobiletext2{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #mobiletext3{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #mobiletext4{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    #mobiletext5{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    iframe{
+        visibility: hidden;
+        top: 5px;
+        left: 5px;
+    }
+    .mobileTV{
+        color: black;
+        padding: 5px;
+        height: 30px;
+        background-color: white;
+        border-radius: 30px;
+        border-color: black;
+        border-style: solid;
+        text-shadow: none;
+    }
+    #coin2{
+        visibility: hidden;
+        top: 35%;
+        left: 49%;
+        position: fixed;
+    }
+    #couch2{
+        visibility: hidden;
+        top: 80%;
+        position: fixed;
+        left: 75%;
+    }
+    #chandelier2{
+        visibility: hidden;
+        top: 7%;
+        position: fixed;
+        left: 14%;
+    }
+    #gun2{
+        visibility: hidden;
+        position: fixed;
+        top: 5%;
+        left: 80%;
+        height: 210px;
+    }
+    .fade1{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 15s;
+        animation-fill-mode: forwards;
+    }
+    .fade2{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 15s;
+        animation-fill-mode: forwards;
+    }
+    .fade3{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 49s;
+        animation-fill-mode: forwards;
+    }
+    .fade4{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 64s;
+        animation-fill-mode: forwards;
+    }
+    .fade5{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 94s;
+        animation-fill-mode: forwards;
+    }
+    .fade6{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 124s;
+        animation-fill-mode: forwards;
+    }
+    .fade7{
+        animation: text-blur-in;
+        animation-duration: inherit;
+        animation-timing-function: linear;
+        animation-duration: 162s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes text-blur-in {
+        0% {
+            filter: blur(12px) opacity(0%);
+        }
+        100% {
+            filter: blur(0.01);
+        }
     }
  }
